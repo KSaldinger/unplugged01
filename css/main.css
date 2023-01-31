@@ -87,6 +87,124 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* --------------  Base Header - Footer Styles  ------------*/
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/*--------  Header Styles -------------*/
+header{
+
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-divider {
+
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*-------------------  Mobile Styles Homepage  ------------------*/
+
+/*--- Hero Area --*/
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .content-wrapper {
+
+}
+
+/*-- Aside ----*/
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+aside .content-wrapper {
+  
+}
+
+.form-description {
+ 
+}
+
+.form {
+  
+}
+
+
+/*----- features ----*/
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+section .content-wrapper {
+ 
+}
+
+.feature-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/*---- Reviews -------*/
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .reviews {
+
+}
+
+.reviews .content-wrapper {
+  
+}
+
+
+/*----- Footer --------*/
+
+footer {
+
+}
+
+.copyright {
+  
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
