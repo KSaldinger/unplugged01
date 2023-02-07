@@ -87,7 +87,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* --------------  Base Header - Footer Styles  ------------*/
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+/* ------------------  Base Header - Footer Styles  ---------------*/
 
 header,
 footer {
@@ -97,30 +102,54 @@ footer {
   flex-flow: row wrap;
 }
 
-/*--------  Header Styles -------------*/
 header{
-
+  padding: 15px 0;
 }
 
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  margin:  0;
 }
 
 .header-divider {
-
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 57%;
+  margin: 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+.copyright {
+  margin: 20px 0;
 }
 
 /*-------------------  Mobile Styles Homepage  ------------------*/
@@ -130,11 +159,7 @@ header nav ul {
 .hero-area {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-main .content-wrapper {
-
+  flex-flow: row wrap;
 }
 
 /*-- Aside ----*/
@@ -146,16 +171,24 @@ aside {
   flex-flow: row wrap;
 }
 
-aside .content-wrapper {
-  
+.form-description {
+  margin: 20px 0;
 }
 
-.form-description {
- 
+.form-description h3 {
+  padding: 20px 0;
+}
+
+.form-description p {
+  padding: 30px 0;
 }
 
 .form {
-  
+  margin: 20px 0;
+}
+
+.form h3 {
+   padding:20px 0;
 }
 
 
@@ -167,8 +200,14 @@ aside .content-wrapper {
   flex-flow: row wrap;
 }
 
-section .content-wrapper {
- 
+.features h2 {
+  margin-bottom: 60px;
+}
+
+
+.features article {
+  width: 60%;
+  margin: 30px 0;
 }
 
 .feature-items {
@@ -178,32 +217,40 @@ section .content-wrapper {
   flex-flow: row wrap;
 }
 
+.features-item-description {
+  margin: 0;
+  padding: 30px 0;
+}
+
 /*---- Reviews -------*/
 
 .reviews {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px 0;
 }
 
-section .reviews {
-
-}
-
-.reviews .content-wrapper {
-  
+.reviews h2 {
+  margin-bottom: 40px;
 }
 
 
-/*----- Footer --------*/
-
-footer {
-
+.reviews h3 {
+  width: 51%;
+  margin: 0;
+  padding: 20px 0;
 }
 
-.copyright {
-  
+.reviews p {
+  margin: 0;
+  padding: 10px 0;
 }
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes
