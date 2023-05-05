@@ -279,6 +279,7 @@ input[type="button"] {
 }
 
 
+
  /* ==========================================================================
                           ABOUT PAGE Mobile Styles
    ========================================================================== */
@@ -299,9 +300,17 @@ input[type="button"] {
                           FAQ PAGE Mobile Styles
    ========================================================================== */
 
-   .content-wrapper {
+
+  .faq-content-wrapper {
+    width: 90%;
     padding: 0 5%;
   }
+
+  .faq-header {
+    width: 90%;
+    padding: 0 5%;
+  }
+  
 
 
 
@@ -477,7 +486,7 @@ input[type="button"] {
     width: 100%;
     margin: 100px 0;
   }
-}
+
  
 
 
@@ -536,7 +545,41 @@ input[type="button"] {
 }
 
 /* ==========================================================================
-                          DESKTOP QUERIES
+                          FAQ PAGE Tablet Styles
+   ========================================================================== */
+
+  .faq-header {
+    width: 640px;
+    padding: 0 10%;
+  }
+  
+   .faq-content-wrapper {
+    width: 640px;
+    padding: 13px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+
+  .faq-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: column;
+    width: 45%;
+    padding: 18px 10px;
+    margin: 30px 5px;
+  }
+}
+  
+
+
+
+
+
+/* ==========================================================================
+                          DESKTOP STYLES
    ========================================================================== */
 
 @media only screen and (min-width: 1200px) {
@@ -614,6 +657,12 @@ input[type="button"] {
                           FAQ PAGE
    ========================================================================== */
   
+
+   .faq-header {
+    width: 960px;
+    padding: 0 14px;
+    margin: 0 16%;
+  }
 
   .faq-content-wrapper {
     display: flex;
