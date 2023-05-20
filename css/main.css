@@ -101,7 +101,8 @@ body {
 
 ul,
 ol {
-  
+  font-size: 1.125em;
+  font-weight: bold;
 }
 
 a {
@@ -109,18 +110,27 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 2.25em;
+  line-height: 2.688em;
+  font-weight: 500;
+}
+
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.25em;
+  font-size: 1.875em;
+  font-weight: 500;
 }
 
 h3,
 h4 {
-  font-size: 1.25em;
+  font-size: 1.125em;
+  font-weight: 500;
 }
 
 p {
-  
+  font-size: 0.875em;
+  line-height: 1.125em;
 }
 
 img {
@@ -132,7 +142,7 @@ figure {
 }
 
 address {
-
+  font-style: normal;
 }
 
 .content-wrapper {
@@ -148,6 +158,8 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
+  color: #e2e3ed;
 }
 
 header{
@@ -189,7 +201,6 @@ footer p {
 }
 
 footer .content-wrapper {
-  /*width: 55%;*/
   margin: 55px 35px;
   display: flex;
   justify-content: space-around;
@@ -225,6 +236,8 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  color: #e2e3ed;
 }
 
 .form-description {
@@ -261,11 +274,16 @@ input[type="text"] {
   margin: 0 0 20px 0;
   padding: 1em;
   width: 76%;
+  font-size: 1.125em;
+  font-weight: 500;
+  color: #2a423a;
 }
 
 input[type="button"] {
   margin: 20px 0 0 0;
   padding: 20px;
+  background-color: #2a423a;
+  color: #e2e3ed;
 }
 
 
@@ -453,6 +471,41 @@ input[type="button"] {
 
 @media only screen and (min-width: 768px) {
   /* Tablet styles here */
+
+h1 {
+  font-size: 3em;
+  line-height: 3em;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 3em;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.875em;
+}
+
+footer,
+contact-h4 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.125em;
+  line-height: 1.5em;
+}
+
+footer p {
+  line-height: 1.125em;
+}
+
+faq-h4,
+faq-p {
+  font-size: 0.875em;
+  line-height: 0.984em;
+}
 
   .content-wrapper {
     width: 680px;
