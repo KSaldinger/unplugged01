@@ -232,7 +232,7 @@ footer .contact {
 
 /*-------------------  Mobile Styles Homepage  ------------------*/
 
-/*--- Hero Area --*/
+/*-------- Hero Area ------*/
 
 .hero-area {
   display: flex;
@@ -242,7 +242,7 @@ footer .contact {
   background-size: cover;
 }
 
-/*-- Aside ----*/
+/*-------- Aside --------*/
 
 aside {
   display: flex;
@@ -310,7 +310,7 @@ input[type="button"] {
 
 
 
-/*----- features ----*/
+/*----------- features ------------*/
 
 .features {
   display: flex;
@@ -339,6 +339,16 @@ input[type="button"] {
   margin: 0;
 }
 
+.fontawesome-icon {
+  text-align: center;
+  margin: 20px 0px 30px 0;
+}
+
+.features i {
+  font-size: 3.75em;
+  color: #e2e3ed;
+}
+
 .features-item-description {
   margin: 0;
   padding: 30px 0;
@@ -359,8 +369,9 @@ input[type="button"] {
 }
 
 .reviews h2 {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #e2e3ed;
+  line-height: 1.25em;
 }
 
 
@@ -534,18 +545,20 @@ input[type="button"] {
 @media only screen and (min-width: 768px) {
   /* Tablet styles here */
 
+/* ------------------  Base Header - Footer Styles  ---------------*/  
+
 header figure {
   width: 45%;
 }
 
 h1 {
   font-size: 3em;
-  line-height: 3em;
+  line-height: 1.25em;
 }
 
 h2 {
   font-size: 2.25em;
-  line-height: 3em;
+  line-height: 1.5em;
 }
 
 h3 {
@@ -573,85 +586,100 @@ faq-p {
   line-height: 0.984em;
 }
 
-  .content-wrapper {
-    width: 680px;
-    margin: 100px 0;
-  }
+.content-wrapper {
+  width: 680px;
+  margin: 100px 0;
+}
 
-  header .content-wrapper {
-    justify-content: center;
-    flex-flow: nowrap;
-    padding: 33px 0;
-  }
+header .content-wrapper {
+  justify-content: center;
+  flex-flow: nowrap;
+  padding: 33px 0;
+}
 
-  header nav ul {
-    justify-content: space-between;
-    width: 31%;
-  }
+header nav ul {
+  justify-content: space-between;
+  width: 31%;
+}
 
-  .header-divider {
-    margin: 33px 0 0 0;
-  }
+.header-divider {
+  margin: 33px 0 0 0;
+}
 
-  .hero-area {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-  }
+/*------------ Hero Area -----------*/
 
-  .hero-area h1 {
-    margin: 0;
-    padding: 0 91px;
-  }
+.hero-area {
+  display: flex;
+  justify-content: start;
+  /*flex-flow: row wrap;*/
+}
 
-  aside .content-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    width: 97%;
-    padding: 50px 0;
-  }
+.hero-area h1 {
+  margin: 0 0px 200px 40px;
+  padding: 0 40px 60px 40px;
+}
 
-  .form-description {
-    margin: 0;
-    width: 38%;
-  }
+/* ------------------  Aside Styles  ---------------*/
 
-  .form {
-    margin: 0;
-    width: 38%; 
-  }
-  
-  .features article {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    flex-basis: 21%;
-    margin: 30px 0;
-    padding: 0px 55px;
-  }
+aside .content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 97%;
+  padding: 10px 0;
+}
 
-  .features h2 {
-    margin-bottom: 20px;
-  }
+.form-description {
+  margin: 0;
+  width: 38%;
+}
 
-  .reviews {
-    padding: 100px 0;
-  }
+.form {
+  margin: 0;
+  width: 38%; 
+}
 
-  .reviews article {
-    display: flex;
-    justify-content: flex-end;
-  }
+/* ----------------  Features Styles  ---------------*/
 
-  .footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    width: 100%;
-    margin: 100px 0;
-  }
+.features article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  flex-basis: 30%;
+  margin: 30px 0;
+  padding: 0px 55px;
+}
+
+.features h2 {
+  margin-bottom: 20px;
+}
+
+/* ------------------  Reviews  ---------------*/
+
+.reviews .content-wrapper {
+  margin: 1px 80px 2px 55px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 0 100px 0;
+}
+
+.reviews article {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  margin: 100px 0;
+}
 
  
 
