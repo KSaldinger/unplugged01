@@ -97,6 +97,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
 }
 
 ul,
@@ -117,6 +118,7 @@ h1 {
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
   color: #e2e3ed;
+  padding-bottom: 274px;
 }
 
 h2 {
@@ -127,6 +129,7 @@ h2 {
 
 h3,
 h4 {
+  font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   font-weight: 500;
 }
@@ -155,19 +158,14 @@ address {
 
 /* ------------------  Base Header - Footer Styles  ---------------*/
 
-header,
-footer {
+header {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
   background-color: #202322;
   color: #e2e3ed;
-}
-
-header{
   padding: 15px 0;
 }
+
 
 header .content-wrapper {
   display: flex;
@@ -206,28 +204,52 @@ header figure {
   width: 60%;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #202322;
+  color: #e2e3ed;
+}
+
 footer p {
   margin: 0;
-  text-align: center;
 }
 
 footer .content-wrapper {
-  margin: 55px 35px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  width: 55%;
 }
 
 footer .contact {
   margin-bottom: 50px;
 }
 
-.copyright {
-  margin: 20px 10px;
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
-  align-items: end;
-  width: 100%;
+  align-items: center;
+}
+
+footer a {
+  padding: 0%;
+}
+
+footer .social-icons p i {
+  font-size: 2.3125em;
+}
+
+footer .copyright {
+  margin: 20px 0px;
 }
 
 /*-------------------  Mobile Styles Homepage  ------------------*/
@@ -424,15 +446,16 @@ input[type="button"] {
   justify-content: center;
 }
 
-.footer-content h4 {
-  padding: 0 45px;
-}
 
  /* ==========================================================================
                           FAQ PAGE Mobile Styles
    ========================================================================== */
 
 
+  .faq {
+    background-color: #527158;
+  }
+   
   .faq-content-wrapper {
     width: 90%;
     padding: 0 5%;
@@ -547,8 +570,11 @@ input[type="button"] {
 
 /* ------------------  Base Header - Footer Styles  ---------------*/  
 
-header figure {
-  width: 45%;
+
+ /* General styles */
+.content-wrapper {
+width: 640px;
+margin: 100px 0;
 }
 
 h1 {
@@ -566,29 +592,14 @@ h3 {
   line-height: 1.875em;
 }
 
-footer,
-contact-h4 {
-  font-size: 1.5em;
-}
-
 p {
-  font-size: 1.125em;
-  line-height: 1.5em;
+  font-size: .875em;
+  line-height: 1.285em;
 }
 
-footer p {
-  line-height: 1.125em;
-}
-
-faq-h4,
-faq-p {
-  font-size: 0.875em;
-  line-height: 0.984em;
-}
-
-.content-wrapper {
-  width: 680px;
-  margin: 100px 0;
+/* Header */
+header figure {
+  width: 45%;
 }
 
 header .content-wrapper {
@@ -606,6 +617,37 @@ header nav ul {
   margin: 33px 0 0 0;
 }
 
+/* Footer */
+footer .content-wrapper {
+  width: 65%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0;
+}
+
+footer h4 {
+  font-size: 1.5em;
+}
+
+footer p {
+  line-height: 1.125em;
+}
+
+footer .social-icons {
+  width: 12.5em;
+  justify-content: space-between;
+}
+
+.faq h4,
+.faq p {
+  font-size: 0.875em;
+  line-height: 0.984em;
+}
 /*------------ Hero Area -----------*/
 
 .hero-area {
@@ -673,15 +715,6 @@ aside .content-wrapper {
   justify-content: flex-end;
 }
 
-.footer-content {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  width: 100%;
-  margin: 100px 0;
-}
-
- 
 
 
 
@@ -689,10 +722,6 @@ aside .content-wrapper {
                           ABOUT PAGE Tablet
    ========================================================================== */
 
-
-.mission .content-wrapper {
-  margin-left: 40px;
-}
 
 .mission  {
   display: flex;
@@ -746,13 +775,6 @@ aside .content-wrapper {
   padding-right: 40px;
 }
 
-.contact-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px 0px;
-  margin: 0;
-}
 
 /* ==========================================================================
                           FAQ PAGE Tablet Styles
