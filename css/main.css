@@ -127,6 +127,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3,
@@ -366,7 +367,7 @@ input[type="button"] {
 
 .fontawesome-icon {
   text-align: center;
-  margin: 20px 0px 30px 0;
+ /* margin: 20px 0px 30px 0;*/
 }
 
 .features i {
@@ -387,8 +388,6 @@ input[type="button"] {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  flex-flow: row wrap;
-  padding: 10px 0;
   background-color: #2a423a;
   color: #e2e3ed;
 }
@@ -607,7 +606,7 @@ h2 {
 
 h3 {
   font-size: 1.5em;
-  line-height: 1.875em;
+  line-height: 1.25em;
 }
 
 p {
@@ -674,23 +673,22 @@ footer .contact {
 
 .hero-area {
   display: flex;
-  justify-content: start;
-  /*flex-flow: row wrap;*/
+  justify-content: center;
+  min-height: 600px;
 }
 
 .hero-area h1 {
-  margin: 0 0px 200px 40px;
-  padding: 0 40px 60px 40px;
+  margin: 0;
+  /*padding: 0 40px 60px 40px;*/
 }
 
 /* ------------------  Aside Styles  ---------------*/
 
 aside .content-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-flow: row wrap;
-  width: 97%;
-  padding: 10px 0;
+  margin: 50px 0;
 }
 
 .form-description {
@@ -719,22 +717,34 @@ aside .content-wrapper {
   margin-bottom: 20px;
 }
 
-/* ------------------  Reviews  ---------------*/
-
-.reviews .content-wrapper {
-  margin: 1px 80px 2px 55px;
+.features .features-items {
+  align-items: flex-start;
 }
+/* ------------------  Reviews  ---------------*/
 
 .reviews {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 50px 0 100px 0;
+  justify-content: center;
+}
+
+.reviews h2 {
+  width: 85%;
 }
 
 .reviews article {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.reviews article figure,
+.reviews article div {
+  width: 49%;
+}
+
+.reviews h3 {
+  width: 75%;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -930,7 +940,11 @@ aside .content-wrapper {
 
   .reviews article {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+  }
+
+  .reviews article div {
+    width: 42%;
   }
 
 
