@@ -231,6 +231,13 @@ footer .contact {
   margin-bottom: 50px;
 }
 
+footer .social {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
 footer .social-icons {
   display: flex;
   justify-content: space-between;
@@ -669,6 +676,8 @@ footer .contact {
   font-size: 0.875em;
   line-height: 0.984em;
 }
+
+
 /*------------ Hero Area -----------*/
 
 .hero-area {
